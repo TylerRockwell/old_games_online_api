@@ -16,15 +16,8 @@
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
-# Indexes
-#
-#  index_admins_on_email                 (email) UNIQUE
-#  index_admins_on_reset_password_token  (reset_password_token) UNIQUE
-#
 
 class Admin < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 end

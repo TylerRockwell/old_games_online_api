@@ -32,3 +32,4 @@ config/database.yml
 */.DS_Store
 vendor/ruby
 .tape
+smashing_docs/api_docs.md
