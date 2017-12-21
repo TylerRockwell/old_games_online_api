@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.3
   Exclude:
     - "vendor/**/*"
-    - "db/schema.rb"
+    - "db/**/*"
     - "bin/*"
     - "lib/files/cucumber.rake"
     - "lib/tasks/*"

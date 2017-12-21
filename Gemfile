@@ -16,21 +16,17 @@ group :development, :test do
   gem 'awesome_print'
   gem 'brakeman', '~> 3.5'
   gem 'bundler-audit'
-  gem 'codeclimate-test-reporter', '~> 1.0.0'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
+  gem 'faker'
+  gem "letter_opener"
   gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'shoulda-matchers'
-  gem 'simplecov'
   gem 'smashing_docs'
 end
 
 group :development do
   gem 'annotate'
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console', '>= 3.3.0'
 end
