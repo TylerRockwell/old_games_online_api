@@ -9,7 +9,7 @@ class ProductSeeds
 
     def create_products
       30.times do
-        title = "#{Faker::Ancient.primordial}, keeper of the #{Faker::Zelda.item}"
+        title = "#{Faker::Ancient.primordial}, Keeper of the #{Faker::Zelda.item}"
         price = rand(10_00..60_00)
         product = Product.create(
           title: title,
