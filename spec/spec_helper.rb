@@ -20,9 +20,9 @@ RSpec.configure do |config|
   # config.after(:suite) { SmashingDocs.finish! }
   config.after(:suite) do
     examples = RSpec.world.filtered_examples.values.flatten
-    after_hooks = ["bundle exec rubocop",
-                   "brakeman -q -w2 -z --no-summary",
-                   "bundle-audit --update"]
+    after_hooks = ['bundle exec rubocop',
+                   'brakeman -q -w2 -z --no-summary',
+                   'bundle-audit --update']
     if examples.none?(&:exception)
       after_hooks.each do |hook_command|
         system("echo ' ' && #{hook_command}")

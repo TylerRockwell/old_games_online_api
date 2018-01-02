@@ -1,9 +1,9 @@
-require "rails_helper"
+require 'rails_helper'
 
-describe "User Sign Up", type: :request do
-  describe "POST /api/v1/users/" do
-    let(:endpoint) { "/api/v1/users/" }
-    let(:password) { "password" }
+describe 'User Sign Up', type: :request do
+  describe 'POST /api/v1/users/' do
+    let(:endpoint) { '/api/v1/users/' }
+    let(:password) { 'password' }
     let(:user) { build(:user, password: password) }
 
     let(:params) do
@@ -19,12 +19,12 @@ describe "User Sign Up", type: :request do
 
     subject { post endpoint, params: params }
 
-    context "a standard sign up" do
-      it_behaves_like "a successful request" do
-        let(:doc_message) { "User Sign Up" }
+    context 'a standard sign up' do
+      it_behaves_like 'a successful request' do
+        let(:doc_message) { 'User Sign Up' }
       end
 
-      it "returns the new user info" do
+      it 'returns the new user info' do
         subject
         expect(json_response[:data]).to include(
           id: User.last.id,

@@ -110,11 +110,16 @@ Style/SingleLineMethods:
   Enabled: false
   AllowIfMethodIsEmpty: true
 Style/StringLiterals:
-  Enabled: false
+  Enabled: true
+  EnforcedStyle: single_quotes
+  SupportedStyles:
+    - single_quotes
+    - double_quotes
+  ConsistentQuotesInMultiline: false
 Style/StringLiteralsInInterpolation:
   Description: Checks if uses of quotes inside expressions in interpolated strings
     match the configured preference.
-  Enabled: false
+  Enabled: true
   EnforcedStyle: single_quotes
   SupportedStyles:
   - single_quotes

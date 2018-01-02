@@ -1,6 +1,6 @@
 Dir["#{File.dirname(__FILE__)}/seeds/*.rb"].each { |file| require file }
 
-SEED_LIST = %w(Admin User)
+SEED_LIST = %w(Admin Product User)
 
 def run_seed_file(model)
   print "Seeding #{model.pluralize}..."
