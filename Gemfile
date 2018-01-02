@@ -5,6 +5,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'inherited_resources', '~> 1.7'
+gem "money-rails"
 gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.3'
